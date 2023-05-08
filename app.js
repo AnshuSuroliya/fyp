@@ -7,11 +7,7 @@ const mongoose = require('mongoose');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-//const ngrok = require('ngrok');
-//(async function() {
-  //await ngrok.authtoken("2OyflwMC7sXzWRSI3FAyGhjbKy1_mgGcXgJSRibTd8qEcWZ5");
-  //const url = await ngrok.connect(3000);
-//})();
+
 
 var app = express();
 //const db = require("./keys/key").mongoURI;

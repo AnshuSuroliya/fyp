@@ -21,8 +21,7 @@ mongoose.connect("mongodb+srv://anshusuroliya09:anshu123@cluster0.tp4atg6.mongod
   .catch(err => console.log(err));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-//"mongodb://anshusuroliya09:anshu123@ac-ef21v4c-shard-00-00.tp4atg6.mongodb.net:27017,ac-ef21v4c-shard-00-01.tp4atg6.mongodb.net:27017,ac-ef21v4c-shard-00-02.tp4atg6.mongodb.net:27017/?ssl=true&replicaSet=atlas-nvrgkj-shard-0&authSource=admin&retryWrites=true&w=majority/smartstickDB"
-//mongodb+srv://admin-anshu:anshu123@cluster0.3pjay.mongodb.net/test"
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

@@ -7,7 +7,7 @@ function getassetdata(){
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "http://localhost:3000/getdata/"+assetnumber,
+        "url": "https://smartsickgps.onrender.com/"+assetnumber,
         "method": "GET",
         "headers": {
           "cache-control": "no-cache"

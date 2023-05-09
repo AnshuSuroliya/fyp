@@ -13,7 +13,7 @@ const gpsdataSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    updatedate: {
+    updateDate: {
         type: Date,
         default: Date.now(),
         required: false

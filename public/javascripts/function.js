@@ -25,7 +25,7 @@ function getassetdata(){
                 <td> ` +data[i].assetnumber+`</td>
                 <td> ` +data[i].latitude+`</td>
                 <td> ` +data[i].longitude+`</td>
-                <td> ` +moment(data[i].updatedate).format("MM/DD/YYYY h:mm:ss a")+`</td>
+                <td> ` +moment(data[i].updateDate).format("MM/DD/YYYY h:mm:ss a")+`</td>
                 <td> <button type="button" class="btn btn-primary" id="`+i+`" onclick="updatelocation(this.id)">View</button>
                 </td></tr>`;
                 serialno++;

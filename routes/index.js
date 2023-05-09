@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post("/addgpsdata",(req,res) =>{
-  const {assetnumber, latitude, longitude} = req.body;
+  const {assetnumber, latitude, longitude,updateDate} = req.body;
   let errors = [];
 
   if(!assetnumber || !latitude || !longitude){
@@ -19,7 +19,8 @@ router.post("/addgpsdata",(req,res) =>{
     const newgpsdata = new gpsdata({
       assetnumber,
       latitude,
-      longitude
+      longitude,
+      updateDate
     });
 
     newgpsdata
